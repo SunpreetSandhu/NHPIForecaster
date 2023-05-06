@@ -31,7 +31,7 @@ public class MySQLAccess implements DataBaseConnection{
 			// This will load the MySQL driver, each DB has its own driver
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			// Setup the connection with the DB
-			connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/3311deliverable", "root", "Sunpreet02"); 
+			connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/NHPI", "root", ""); 
 
 			//statement = connect.createStatement();
 
@@ -58,8 +58,7 @@ public class MySQLAccess implements DataBaseConnection{
 			// Statements allow to issue SQL queries to the database
 			statement = connect.createStatement();
 			
-			//ADDED CONNECT METHOD SO NOW WE JUST CALL THAT 
-			//connectToDataBase();
+		
 			
 			
 			// Result set get the result of the SQL query
